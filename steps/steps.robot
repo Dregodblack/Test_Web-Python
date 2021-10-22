@@ -1,12 +1,16 @@
+##################################################################################################################################
+# Autor: Andre Luis
+# Decrição: Metodos para a interação com a Suite principal
+##################################################################################################################################
+
 *** Settings ***
-Resource                    ../pages/Accenture_pages.robot
-Resource                    ../resource/Accenture_resource.robot
+Resource                    ../pages/pages.robot
+Resource                    ../Config/resource.robot
 Library                     SeleniumLibrary
 
 *** Keywords ***
-Dado que acessei o site Tricents
+Dado que eu como usuario acesso o site Tricents
     Olha se Existe                                          ${Vehicle}                        
-    # Verifica Se Item Esta Na Tela                           ${Modelo}
 
 Quando preencho as informações da Primeira tela com "${make}", "${model}", "${cylinder}", "${kws}", "${date}", "${number}", "${boolean}", "${fuel}", "${payload}", "${weight}", "${price}", "${plate}" e "${mileage}"    
     Verifica Se ComboBox Esta Na Tela                       ${MakeComboBx}                  ${make}
@@ -53,7 +57,7 @@ E preencho as informações da Terceira tela com "${StartDate}", "${Insurance_Su
     Olha se Existe                                          ${SelectOption}                        
 
 E Selecionar na Quarta tela a opção do plano "${Option}"
-    Olha se Existe                                           ${Price}       
+    Olha se Existe                                           ${TelaPrice}       
     Verifica CheckBox Select Price Option e seleciona        ${SelectOption}                     ${Option}
     Verifica Se Item Esta Na Tela                            ${Next4}
     Olha se Existe                                           ${E-Mail_Input}       
@@ -66,6 +70,7 @@ E preencho as informações da Quinta tela com "${Email}", "${Cell}", "${Name}",
     Verifica Se Input Esta Na Tela                          ${Password_Input}                 ${Password}
     Verifica Se Input Esta Na Tela                          ${ConfirmPassword_Input}          ${Password}
 
-Então Valido a tela com mensagem “Sending e-mail success!” confirmando que passou com sucesso
+Então Valido a tela com mensagem "${Texto}" confirmando que passou com sucesso 
     Verifica Se Item Esta Na Tela                           ${Next5}
+    Verifica se existe o texto na Tela                      ${element}                        ${Texto}
     Verifica Se Item Esta Na Tela                           ${Okay}

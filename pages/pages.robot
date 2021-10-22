@@ -1,9 +1,14 @@
+##################################################################################################################################
+# Autor: Andre Luis
+# Decrição: Elementos da pagina Web para realizar a interação
+##################################################################################################################################
+
 *** Settings ***
-Resource            ../resource/Accenture_resource.robot
-Resource            ../steps/Accenture_steps.robot
+Resource            ../resource/resource.robot
+Resource            ../steps/steps.robot
 
 *** Variables ***
-#Tela-01 - Marcio
+#Tela-01 
 ${Modelo}                                   xpath=//div[@class='main-navigation']//a[@id='nav_automobile']
 ${Vehicle}                                  xpath=//ul//a[@id='entervehicledata']
 ${MakeComboBx}                              xpath=//select[@id='make']
@@ -58,7 +63,7 @@ ${CourtesyCar_ComboBx}                      xpath=//select[@id='courtesycar']
 ${Next3}                                    xpath=//button[@id='nextselectpriceoption']
 
 #Tela-04
-${Price}                                    xpath=//a[@id='selectpriceoption']
+${TelaPrice}                                xpath=//a[@id='selectpriceoption']
 ${SelectOption}                             xpath=//th[@colspan='4']
 ${Option_Silver}                            xpath=//th[@colspan='4']//label[@class='choosePrice ideal-radiocheck-label'][1]
 ${Option_Gold}                              xpath=//th[@colspan='4']//label[@class='choosePrice ideal-radiocheck-label'][2]
@@ -75,4 +80,5 @@ ${Password_Input}                           xpath=//input[@id='password']
 ${ConfirmPassword_Input}                    xpath=//input[@id='confirmpassword']
 
 ${Next5}                                    xpath=//button[@id='sendemail']
+${element}                                  xpath=//div[@class='sweet-alert showSweetAlert visible']//h2
 ${Okay}                                     xpath=//button[@class='confirm'] 

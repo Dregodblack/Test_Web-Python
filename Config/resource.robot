@@ -1,7 +1,12 @@
+##################################################################################################################################
+# Autor: Andre Luis
+# Decrição: Metodos para a interação com o Steps e o Browser
+##################################################################################################################################
+
 *** Settings ***        
 Library                                          SeleniumLibrary
-Resource                                         ../steps/Accenture_steps.robot
-Resource                                         ../pages/Accenture_pages.robot
+Resource                                         ../steps/steps.robot
+Resource                                         ../pages/pages.robot
 
 *** Variables ***
 ${BROWSER}                                       chrome
@@ -11,7 +16,7 @@ ${Logo}                                          xpath=//div[@id]//img[@id='tric
 
 
 *** Keywords ***
-Contexto
+Iniciar Sessão
     Open Browser                                 ${URL}               ${BROWSER}
     Maximize Browser Window
     Wait Until Element Is Visible                ${Logo}              10
@@ -84,21 +89,27 @@ Seleciona Item Check Box Select Price Option
 
 Preenche Text
     [Arguments]                         ${input}            ${Text}
-    Sleep                               1
-    Wait Until Element Is Visible       ${input}            20
+    Sleep                               3
+    Wait Until Element Is Visible       ${input}            120
     Input Text                          ${input}            ${Text}
     Capture Page Screenshot
 
 Click No Item
     [Arguments]                         ${item}
-    Sleep                               1
-    Wait Until Element Is Visible       ${item}             20
+    Sleep                               3
+    Wait Until Element Is Visible       ${item}             120
     Click Element                       ${item}
     Capture Page Screenshot
 
 Olha se Existe
     [Arguments]         ${element}
-    Wait Until Element Is Visible       ${element}          20
+    Wait Until Element Is Visible       ${element}          120
+    Capture Page Screenshot
+
+Verifica se existe o texto na Tela
+    [Arguments]         ${element}          ${Texto}
+    Sleep                                                         5
+    Wait Until Element Contains             ${element}           ${Texto}
     Capture Page Screenshot
 
 Verifica Se ComboBox Esta Na Tela
@@ -106,21 +117,15 @@ Verifica Se ComboBox Esta Na Tela
     ${Status}           Run Keyword And Return Status           Olha se Existe                                  ${pageObject}          
     Run Keyword If          '${Status}' == 'True'           Seleciona Item Combo Box                            ${pageObject}   ${opção}
     
-
-
 Verifica Se Input Esta Na Tela
     [Arguments]             ${pageObject}                        ${opção}
     ${Status}           Run Keyword And Return Status           Olha se Existe                                  ${pageObject}          
     Run Keyword If          '${Status}' == 'True'               Preenche Text                                   ${pageObject}   ${opção}
 
-
-
 Verifica Se Item Esta Na Tela
     [Arguments]             ${pageObject}
     ${Status}           Run Keyword And Return Status           Olha se Existe                                  ${pageObject}          
     Run Keyword If          '${Status}' == 'True'               Click No Item                                   ${pageObject}
-
-
 
 Verifica CheckBox Right Driver e seleciona
     [Arguments]             ${pageObject}                        ${opção}
