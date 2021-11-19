@@ -5,8 +5,7 @@
 
 *** Settings ***        
 Library                                          SeleniumLibrary
-Resource                                         ../steps/steps.robot
-Resource                                         ../pages/pages.robot
+Library                                          AutoRecorder
 
 *** Variables ***
 ${BROWSER}                                       chrome

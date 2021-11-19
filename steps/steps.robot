@@ -6,7 +6,6 @@
 *** Settings ***
 Resource                    ../pages/pages.robot
 Resource                    ../Config/resource.robot
-Library                     SeleniumLibrary
 
 *** Keywords ***
 Dado que eu como usuario acesso o site Tricents

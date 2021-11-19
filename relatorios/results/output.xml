@@ -1,0 +1,3203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.9.4 on win32)" generated="20211022 11:06:42.702" rpa="false" schemaversion="2">
+<suite id="s1" name="Tricentis" source="C:\Users\Andre\Desktop\Luis\Estudos\Linguagem de Programação\Robot Framework - VS Code\Teste Tricentis\Testes\Tricentis.robot">
+<test id="s1-t1" name="CT01- Preencher os formulários das paginas e clicando no Botão Next">
+<kw name="Iniciar Sessão" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211022 11:06:48.474" level="INFO">Opening browser 'chrome' to base url 'http://sampleapp.tricentis.com/101/app.php'.</msg>
+<status status="PASS" starttime="20211022 11:06:48.474" endtime="20211022 11:06:54.245"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211022 11:06:54.245" endtime="20211022 11:06:54.395"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<arg>10</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:06:54.396" endtime="20211022 11:06:54.466"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:06:59.477" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211022 11:06:54.466" endtime="20211022 11:06:59.477"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:06:59.782" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-86.png"&gt;&lt;img src="selenium-screenshot-86.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:06:59.478" endtime="20211022 11:06:59.782"/>
+</kw>
+<status status="PASS" starttime="20211022 11:06:48.473" endtime="20211022 11:06:59.782"/>
+</kw>
+<kw name="Dado que eu como usuario acesso o site Tricents" library="steps">
+<kw name="Olha se Existe" library="resource">
+<arg>${Vehicle}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:06:59.788" endtime="20211022 11:06:59.873"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:00.171" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-87.png"&gt;&lt;img src="selenium-screenshot-87.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:06:59.874" endtime="20211022 11:07:00.171"/>
+</kw>
+<status status="PASS" starttime="20211022 11:06:59.787" endtime="20211022 11:07:00.172"/>
+</kw>
+<status status="PASS" starttime="20211022 11:06:59.786" endtime="20211022 11:07:00.172"/>
+</kw>
+<kw name="Quando preencho as informações da Primeira tela com &quot;${make}&quot;, &quot;${model}&quot;, &quot;${cylinder}&quot;, &quot;${kws}&quot;, &quot;${date}&quot;, &quot;${number}&quot;, &quot;${boolean}&quot;, &quot;${fuel}&quot;, &quot;${payload}&quot;, &quot;${weight}&quot;, &quot;${price}&quot;, &quot;${plate}&quot; e &quot;${mileage}&quot;" library="steps" sourcename="Quando preencho as informações da Primeira tela com &quot;${make}&quot;, &quot;${model}&quot;, &quot;${cylinder}&quot;, &quot;${kws}&quot;, &quot;${date}&quot;, &quot;${number}&quot;, &quot;${boolean}&quot;, &quot;${fuel}&quot;, &quot;${payload}&quot;, &quot;${weight}&quot;, &quot;${price}&quot;, &quot;${plate}&quot; e &quot;${mileage}&quot;">
+<kw name="Verifica Se ComboBox Esta Na Tela" library="resource">
+<arg>${MakeComboBx}</arg>
+<arg>${make}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:00.183" endtime="20211022 11:07:00.247"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:00.560" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-88.png"&gt;&lt;img src="selenium-screenshot-88.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:00.248" endtime="20211022 11:07:00.560"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:00.182" endtime="20211022 11:07:00.561"/>
+</kw>
+<msg timestamp="20211022 11:07:00.561" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:00.181" endtime="20211022 11:07:00.561"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Combo Box</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Combo Box" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:01.574" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211022 11:07:00.564" endtime="20211022 11:07:01.574"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:01.575" endtime="20211022 11:07:01.662"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:01.664" level="INFO">Clicking element 'xpath=//select[@id='make']'.</msg>
+<status status="PASS" starttime="20211022 11:07:01.663" endtime="20211022 11:07:01.921"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Item}</var>
+<arg>${combobox}//option[@value='${itemcombobox}']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211022 11:07:01.923" level="INFO">${Item} = xpath=//select[@id='make']//option[@value='Porsche']</msg>
+<status status="PASS" starttime="20211022 11:07:01.922" endtime="20211022 11:07:01.924"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:01.924" endtime="20211022 11:07:02.009"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:02.011" level="INFO">Clicking element 'xpath=//select[@id='make']//option[@value='Porsche']'.</msg>
+<status status="PASS" starttime="20211022 11:07:02.010" endtime="20211022 11:07:02.175"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:00.563" endtime="20211022 11:07:02.175"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:00.562" endtime="20211022 11:07:02.175"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:00.179" endtime="20211022 11:07:02.176"/>
+</kw>
+<kw name="Verifica Se ComboBox Esta Na Tela" library="resource">
+<arg>${ModelComboBx}</arg>
+<arg>${model}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:02.181" endtime="20211022 11:07:02.282"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:02.595" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-89.png"&gt;&lt;img src="selenium-screenshot-89.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:02.283" endtime="20211022 11:07:02.595"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:02.179" endtime="20211022 11:07:02.596"/>
+</kw>
+<msg timestamp="20211022 11:07:02.596" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:02.178" endtime="20211022 11:07:02.596"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Combo Box</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Combo Box" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:03.602" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211022 11:07:02.600" endtime="20211022 11:07:03.602"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:03.603" endtime="20211022 11:07:03.718"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:03.720" level="INFO">Clicking element 'xpath=//select[@id='model']'.</msg>
+<status status="PASS" starttime="20211022 11:07:03.719" endtime="20211022 11:07:03.968"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Item}</var>
+<arg>${combobox}//option[@value='${itemcombobox}']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211022 11:07:03.970" level="INFO">${Item} = xpath=//select[@id='model']//option[@value='Motorcycle']</msg>
+<status status="PASS" starttime="20211022 11:07:03.969" endtime="20211022 11:07:03.970"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:03.971" endtime="20211022 11:07:04.099"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:04.101" level="INFO">Clicking element 'xpath=//select[@id='model']//option[@value='Motorcycle']'.</msg>
+<status status="PASS" starttime="20211022 11:07:04.100" endtime="20211022 11:07:04.216"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:02.598" endtime="20211022 11:07:04.216"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:02.597" endtime="20211022 11:07:04.217"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:02.176" endtime="20211022 11:07:04.217"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${CylinderInput}</arg>
+<arg>${cylinder}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:04.221" endtime="20211022 11:07:04.333"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:04.698" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-90.png"&gt;&lt;img src="selenium-screenshot-90.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:04.333" endtime="20211022 11:07:04.698"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:04.220" endtime="20211022 11:07:04.699"/>
+</kw>
+<msg timestamp="20211022 11:07:04.699" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:04.219" endtime="20211022 11:07:04.699"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:07.708" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:04.702" endtime="20211022 11:07:07.708"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:07.708" endtime="20211022 11:07:07.788"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:07.790" level="INFO">Typing text '1000' into text field 'xpath=//input[@id='cylindercapacity']'.</msg>
+<status status="PASS" starttime="20211022 11:07:07.788" endtime="20211022 11:07:08.466"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:08.875" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-91.png"&gt;&lt;img src="selenium-screenshot-91.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:08.466" endtime="20211022 11:07:08.875"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:04.701" endtime="20211022 11:07:08.876"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:04.700" endtime="20211022 11:07:08.877"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:04.217" endtime="20211022 11:07:08.878"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${EnginerInput}</arg>
+<arg>${kws}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:08.883" endtime="20211022 11:07:09.069"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:09.429" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-92.png"&gt;&lt;img src="selenium-screenshot-92.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:09.069" endtime="20211022 11:07:09.429"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:08.881" endtime="20211022 11:07:09.430"/>
+</kw>
+<msg timestamp="20211022 11:07:09.430" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:08.880" endtime="20211022 11:07:09.430"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:12.447" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:09.433" endtime="20211022 11:07:12.447"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:12.448" endtime="20211022 11:07:12.534"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:12.536" level="INFO">Typing text '142' into text field 'xpath=//input[@id='engineperformance']'.</msg>
+<status status="PASS" starttime="20211022 11:07:12.534" endtime="20211022 11:07:13.069"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:13.406" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-93.png"&gt;&lt;img src="selenium-screenshot-93.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:13.069" endtime="20211022 11:07:13.406"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:09.432" endtime="20211022 11:07:13.407"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:09.431" endtime="20211022 11:07:13.407"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:08.878" endtime="20211022 11:07:13.408"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${DataManufactureInput}</arg>
+<arg>${date}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:13.412" endtime="20211022 11:07:13.644"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:13.980" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-94.png"&gt;&lt;img src="selenium-screenshot-94.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:13.645" endtime="20211022 11:07:13.980"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:13.411" endtime="20211022 11:07:13.981"/>
+</kw>
+<msg timestamp="20211022 11:07:13.981" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:13.410" endtime="20211022 11:07:13.981"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:17.002" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:13.985" endtime="20211022 11:07:17.002"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:17.005" endtime="20211022 11:07:17.047"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:17.049" level="INFO">Typing text '07/10/2000' into text field 'xpath=//input[@id='dateofmanufacture']'.</msg>
+<status status="PASS" starttime="20211022 11:07:17.048" endtime="20211022 11:07:17.767"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:18.105" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-95.png"&gt;&lt;img src="selenium-screenshot-95.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:17.768" endtime="20211022 11:07:18.105"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:13.983" endtime="20211022 11:07:18.106"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:13.982" endtime="20211022 11:07:18.107"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:13.408" endtime="20211022 11:07:18.107"/>
+</kw>
+<kw name="Verifica Se ComboBox Esta Na Tela" library="resource">
+<arg>${NumSeats1ComboBx}</arg>
+<arg>${number}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:18.112" endtime="20211022 11:07:18.195"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:18.510" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-96.png"&gt;&lt;img src="selenium-screenshot-96.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:18.196" endtime="20211022 11:07:18.510"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:18.110" endtime="20211022 11:07:18.511"/>
+</kw>
+<msg timestamp="20211022 11:07:18.511" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:18.109" endtime="20211022 11:07:18.511"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Combo Box</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Combo Box" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:19.526" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211022 11:07:18.516" endtime="20211022 11:07:19.526"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:19.527" endtime="20211022 11:07:19.566"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:19.567" level="INFO">Clicking element 'xpath=//select[@id='numberofseats']'.</msg>
+<status status="PASS" starttime="20211022 11:07:19.566" endtime="20211022 11:07:19.732"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Item}</var>
+<arg>${combobox}//option[@value='${itemcombobox}']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211022 11:07:19.734" level="INFO">${Item} = xpath=//select[@id='numberofseats']//option[@value='2']</msg>
+<status status="PASS" starttime="20211022 11:07:19.733" endtime="20211022 11:07:19.734"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:19.735" endtime="20211022 11:07:19.804"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:19.806" level="INFO">Clicking element 'xpath=//select[@id='numberofseats']//option[@value='2']'.</msg>
+<status status="PASS" starttime="20211022 11:07:19.805" endtime="20211022 11:07:19.917"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:18.513" endtime="20211022 11:07:19.918"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:18.512" endtime="20211022 11:07:19.918"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:18.108" endtime="20211022 11:07:19.919"/>
+</kw>
+<kw name="Verifica CheckBox Right Driver e seleciona" library="resource">
+<arg>${RightDriverRadio}</arg>
+<arg>${boolean}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:19.924" endtime="20211022 11:07:19.981"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:20.275" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-97.png"&gt;&lt;img src="selenium-screenshot-97.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:19.981" endtime="20211022 11:07:20.276"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:19.922" endtime="20211022 11:07:20.276"/>
+</kw>
+<msg timestamp="20211022 11:07:20.277" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:19.921" endtime="20211022 11:07:20.277"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Check Box Right Driver</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Check Box Right Driver" library="resource">
+<arg>${opção}</arg>
+<if>
+<branch type="IF" condition="'${element}' == 'Yes'">
+<kw name="Click No Item" library="resource">
+<arg>${RightDriverRadioYes}</arg>
+<status status="NOT RUN" starttime="20211022 11:07:20.280" endtime="20211022 11:07:20.280"/>
+</kw>
+<status status="NOT RUN" starttime="20211022 11:07:20.280" endtime="20211022 11:07:20.280"/>
+</branch>
+<branch type="ELSE">
+<kw name="Click No Item" library="resource">
+<arg>${RightDriverRadioNo}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:23.284" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:20.282" endtime="20211022 11:07:23.284"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${item}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:23.285" endtime="20211022 11:07:23.344"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:23.345" level="INFO">Clicking element 'xpath=//label[@class='ideal-radiocheck-label'][2]//span'.</msg>
+<status status="PASS" starttime="20211022 11:07:23.344" endtime="20211022 11:07:23.530"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:23.821" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-98.png"&gt;&lt;img src="selenium-screenshot-98.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:23.531" endtime="20211022 11:07:23.821"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:20.281" endtime="20211022 11:07:23.822"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:20.280" endtime="20211022 11:07:23.822"/>
+</branch>
+<status status="PASS" starttime="20211022 11:07:20.279" endtime="20211022 11:07:23.822"/>
+</if>
+<status status="PASS" starttime="20211022 11:07:20.278" endtime="20211022 11:07:23.823"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:20.277" endtime="20211022 11:07:23.823"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:19.919" endtime="20211022 11:07:23.823"/>
+</kw>
+<kw name="Verifica Se ComboBox Esta Na Tela" library="resource">
+<arg>${NumSeats2ComboBx}</arg>
+<arg>${number}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:23.828" endtime="20211022 11:07:23.882"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:24.170" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-99.png"&gt;&lt;img src="selenium-screenshot-99.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:23.883" endtime="20211022 11:07:24.170"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:23.827" endtime="20211022 11:07:24.171"/>
+</kw>
+<msg timestamp="20211022 11:07:24.171" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:23.826" endtime="20211022 11:07:24.171"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Combo Box</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Combo Box" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:25.188" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211022 11:07:24.175" endtime="20211022 11:07:25.188"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:25.188" endtime="20211022 11:07:25.246"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:25.247" level="INFO">Clicking element 'xpath=//select[@id='numberofseatsmotorcycle']'.</msg>
+<status status="PASS" starttime="20211022 11:07:25.246" endtime="20211022 11:07:25.456"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Item}</var>
+<arg>${combobox}//option[@value='${itemcombobox}']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211022 11:07:25.458" level="INFO">${Item} = xpath=//select[@id='numberofseatsmotorcycle']//option[@value='2']</msg>
+<status status="PASS" starttime="20211022 11:07:25.457" endtime="20211022 11:07:25.459"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:25.459" endtime="20211022 11:07:25.535"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:25.537" level="INFO">Clicking element 'xpath=//select[@id='numberofseatsmotorcycle']//option[@value='2']'.</msg>
+<status status="PASS" starttime="20211022 11:07:25.536" endtime="20211022 11:07:25.653"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:24.173" endtime="20211022 11:07:25.653"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:24.172" endtime="20211022 11:07:25.654"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:23.824" endtime="20211022 11:07:25.654"/>
+</kw>
+<kw name="Verifica Se ComboBox Esta Na Tela" library="resource">
+<arg>${FuelTypeComboBx}</arg>
+<arg>${fuel}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:25.658" endtime="20211022 11:07:25.710"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:26.043" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-100.png"&gt;&lt;img src="selenium-screenshot-100.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:25.711" endtime="20211022 11:07:26.044"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:25.657" endtime="20211022 11:07:26.044"/>
+</kw>
+<msg timestamp="20211022 11:07:26.045" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:25.656" endtime="20211022 11:07:26.045"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Combo Box</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Combo Box" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:27.053" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211022 11:07:26.048" endtime="20211022 11:07:27.053"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:27.054" endtime="20211022 11:07:27.099"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:27.101" level="INFO">Clicking element 'xpath=//select[@id='fuel']'.</msg>
+<status status="PASS" starttime="20211022 11:07:27.100" endtime="20211022 11:07:27.341"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Item}</var>
+<arg>${combobox}//option[@value='${itemcombobox}']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211022 11:07:27.344" level="INFO">${Item} = xpath=//select[@id='fuel']//option[@value='Gas']</msg>
+<status status="PASS" starttime="20211022 11:07:27.342" endtime="20211022 11:07:27.344"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:27.345" endtime="20211022 11:07:27.415"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:27.416" level="INFO">Clicking element 'xpath=//select[@id='fuel']//option[@value='Gas']'.</msg>
+<status status="PASS" starttime="20211022 11:07:27.415" endtime="20211022 11:07:27.532"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:26.047" endtime="20211022 11:07:27.532"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:26.045" endtime="20211022 11:07:27.533"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:25.655" endtime="20211022 11:07:27.533"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${PayloadInput}</arg>
+<arg>${payload}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:27.537" endtime="20211022 11:07:27.603"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:27.930" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-101.png"&gt;&lt;img src="selenium-screenshot-101.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:27.603" endtime="20211022 11:07:27.930"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:27.536" endtime="20211022 11:07:27.931"/>
+</kw>
+<msg timestamp="20211022 11:07:27.931" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:27.536" endtime="20211022 11:07:27.931"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:30.943" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:27.935" endtime="20211022 11:07:30.943"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:30.944" endtime="20211022 11:07:30.986"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:30.988" level="INFO">Typing text '175' into text field 'xpath=//input[@id='payload']'.</msg>
+<status status="PASS" starttime="20211022 11:07:30.987" endtime="20211022 11:07:31.285"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:31.600" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-102.png"&gt;&lt;img src="selenium-screenshot-102.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:31.286" endtime="20211022 11:07:31.600"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:27.933" endtime="20211022 11:07:31.601"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:27.932" endtime="20211022 11:07:31.601"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:27.534" endtime="20211022 11:07:31.601"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${TotalWeightInput}</arg>
+<arg>${weight}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:31.606" endtime="20211022 11:07:31.672"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:31.966" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-103.png"&gt;&lt;img src="selenium-screenshot-103.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:31.672" endtime="20211022 11:07:31.966"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:31.605" endtime="20211022 11:07:31.967"/>
+</kw>
+<msg timestamp="20211022 11:07:31.967" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:31.604" endtime="20211022 11:07:31.967"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:34.985" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:31.971" endtime="20211022 11:07:34.985"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:34.986" endtime="20211022 11:07:35.043"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:35.044" level="INFO">Typing text '190' into text field 'xpath=//input[@id='totalweight']'.</msg>
+<status status="PASS" starttime="20211022 11:07:35.043" endtime="20211022 11:07:35.296"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:35.572" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-104.png"&gt;&lt;img src="selenium-screenshot-104.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:35.296" endtime="20211022 11:07:35.573"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:31.969" endtime="20211022 11:07:35.573"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:31.968" endtime="20211022 11:07:35.574"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:31.602" endtime="20211022 11:07:35.574"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${ListPriceInput}</arg>
+<arg>${price}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:35.577" endtime="20211022 11:07:35.638"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:35.877" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-105.png"&gt;&lt;img src="selenium-screenshot-105.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:35.638" endtime="20211022 11:07:35.878"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:35.576" endtime="20211022 11:07:35.878"/>
+</kw>
+<msg timestamp="20211022 11:07:35.879" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:35.576" endtime="20211022 11:07:35.879"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:38.893" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:35.881" endtime="20211022 11:07:38.893"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:38.893" endtime="20211022 11:07:38.923"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:38.924" level="INFO">Typing text '62000' into text field 'xpath=//input[@id='listprice']'.</msg>
+<status status="PASS" starttime="20211022 11:07:38.924" endtime="20211022 11:07:39.217"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:39.499" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-106.png"&gt;&lt;img src="selenium-screenshot-106.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:39.217" endtime="20211022 11:07:39.499"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:35.880" endtime="20211022 11:07:39.500"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:35.879" endtime="20211022 11:07:39.500"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:35.574" endtime="20211022 11:07:39.501"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${LicensePlaterInput}</arg>
+<arg>${plate}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:39.506" endtime="20211022 11:07:39.560"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:39.799" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-107.png"&gt;&lt;img src="selenium-screenshot-107.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:39.561" endtime="20211022 11:07:39.799"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:39.504" endtime="20211022 11:07:39.800"/>
+</kw>
+<msg timestamp="20211022 11:07:39.800" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:39.503" endtime="20211022 11:07:39.800"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:42.808" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:39.804" endtime="20211022 11:07:42.808"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:42.809" endtime="20211022 11:07:42.847"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:42.849" level="INFO">Typing text 'FSI 3013' into text field 'xpath=//input[@id='licenseplatenumber']'.</msg>
+<status status="PASS" starttime="20211022 11:07:42.848" endtime="20211022 11:07:43.180"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:43.488" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-108.png"&gt;&lt;img src="selenium-screenshot-108.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:43.181" endtime="20211022 11:07:43.488"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:39.802" endtime="20211022 11:07:43.489"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:39.801" endtime="20211022 11:07:43.489"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:39.501" endtime="20211022 11:07:43.490"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${AnnualMileageInput}</arg>
+<arg>${mileage}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:43.494" endtime="20211022 11:07:43.540"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:43.780" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-109.png"&gt;&lt;img src="selenium-screenshot-109.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:43.540" endtime="20211022 11:07:43.780"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:43.492" endtime="20211022 11:07:43.780"/>
+</kw>
+<msg timestamp="20211022 11:07:43.780" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:43.492" endtime="20211022 11:07:43.781"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:46.793" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:43.784" endtime="20211022 11:07:46.793"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:46.794" endtime="20211022 11:07:46.825"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:46.826" level="INFO">Typing text '5000' into text field 'xpath=//input[@id='annualmileage']'.</msg>
+<status status="PASS" starttime="20211022 11:07:46.825" endtime="20211022 11:07:47.077"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:47.367" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-110.png"&gt;&lt;img src="selenium-screenshot-110.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:47.077" endtime="20211022 11:07:47.367"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:43.782" endtime="20211022 11:07:47.367"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:43.781" endtime="20211022 11:07:47.367"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:43.490" endtime="20211022 11:07:47.368"/>
+</kw>
+<kw name="Verifica Se Item Esta Na Tela" library="resource">
+<arg>${Next}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:47.370" endtime="20211022 11:07:47.412"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:47.650" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-111.png"&gt;&lt;img src="selenium-screenshot-111.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:47.412" endtime="20211022 11:07:47.650"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:47.370" endtime="20211022 11:07:47.651"/>
+</kw>
+<msg timestamp="20211022 11:07:47.651" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:47.369" endtime="20211022 11:07:47.651"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Click No Item</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click No Item" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:50.663" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:47.654" endtime="20211022 11:07:50.663"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${item}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:50.664" endtime="20211022 11:07:50.693"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:50.694" level="INFO">Clicking element 'xpath=//button[@id='nextenterinsurantdata']'.</msg>
+<status status="PASS" starttime="20211022 11:07:50.693" endtime="20211022 11:07:50.935"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:51.230" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-112.png"&gt;&lt;img src="selenium-screenshot-112.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:50.936" endtime="20211022 11:07:51.231"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:47.653" endtime="20211022 11:07:51.231"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:47.652" endtime="20211022 11:07:51.231"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:47.368" endtime="20211022 11:07:51.232"/>
+</kw>
+<kw name="Olha se Existe" library="resource">
+<arg>${FirstName_Input}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:51.233" endtime="20211022 11:07:51.285"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:51.602" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-113.png"&gt;&lt;img src="selenium-screenshot-113.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:51.285" endtime="20211022 11:07:51.603"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:51.232" endtime="20211022 11:07:51.603"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:00.176" endtime="20211022 11:07:51.604"/>
+</kw>
+<kw name="E preencho as informações da Segunda tela com &quot;${First_Name}&quot;, &quot;${Last_Name}&quot;, &quot;${Date_of_Birth}&quot;, &quot;${Gender}&quot;, &quot;${Street_Address}&quot;, &quot;${Country}&quot;, &quot;${Zip_Code}&quot;, &quot;${City}&quot;, &quot;${Occupation}&quot;, e &quot;${Hobbies}&quot;" library="steps" sourcename="E preencho as informações da Segunda tela com &quot;${First_Name}&quot;, &quot;${Last_Name}&quot;, &quot;${Date_of_Birth}&quot;, &quot;${Gender}&quot;, &quot;${Street_Address}&quot;, &quot;${Country}&quot;, &quot;${Zip_Code}&quot;, &quot;${City}&quot;, &quot;${Occupation}&quot;, e &quot;${Hobbies}&quot;">
+<kw name="Olha se Existe" library="resource">
+<arg>${Insurant}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:51.610" endtime="20211022 11:07:51.660"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:51.930" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-114.png"&gt;&lt;img src="selenium-screenshot-114.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:51.661" endtime="20211022 11:07:51.930"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:51.609" endtime="20211022 11:07:51.930"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${FirstName_Input}</arg>
+<arg>${First_Name}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:51.933" endtime="20211022 11:07:51.968"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:52.211" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-115.png"&gt;&lt;img src="selenium-screenshot-115.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:51.968" endtime="20211022 11:07:52.211"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:51.932" endtime="20211022 11:07:52.211"/>
+</kw>
+<msg timestamp="20211022 11:07:52.212" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:51.932" endtime="20211022 11:07:52.212"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:55.224" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:52.215" endtime="20211022 11:07:55.224"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:55.225" endtime="20211022 11:07:55.255"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:55.256" level="INFO">Typing text 'Santana' into text field 'xpath=//input[@id='firstname']'.</msg>
+<status status="PASS" starttime="20211022 11:07:55.256" endtime="20211022 11:07:55.570"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:55.870" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-116.png"&gt;&lt;img src="selenium-screenshot-116.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:55.571" endtime="20211022 11:07:55.871"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:52.214" endtime="20211022 11:07:55.871"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:52.212" endtime="20211022 11:07:55.871"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:51.931" endtime="20211022 11:07:55.872"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${LastName_Input}</arg>
+<arg>${Last_Name}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:55.876" endtime="20211022 11:07:55.932"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:56.165" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-117.png"&gt;&lt;img src="selenium-screenshot-117.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:55.932" endtime="20211022 11:07:56.165"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:55.875" endtime="20211022 11:07:56.166"/>
+</kw>
+<msg timestamp="20211022 11:07:56.166" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:55.874" endtime="20211022 11:07:56.166"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:07:59.177" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:07:56.170" endtime="20211022 11:07:59.177"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:59.177" endtime="20211022 11:07:59.209"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:07:59.210" level="INFO">Typing text 'Silva' into text field 'xpath=//input[@id='lastname']'.</msg>
+<status status="PASS" starttime="20211022 11:07:59.209" endtime="20211022 11:07:59.483"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:07:59.775" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-118.png"&gt;&lt;img src="selenium-screenshot-118.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:59.484" endtime="20211022 11:07:59.776"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:56.168" endtime="20211022 11:07:59.776"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:56.167" endtime="20211022 11:07:59.777"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:55.872" endtime="20211022 11:07:59.777"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${DateOfBirth_Input}</arg>
+<arg>${Date_of_Birth}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:07:59.783" endtime="20211022 11:07:59.833"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:00.105" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-119.png"&gt;&lt;img src="selenium-screenshot-119.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:07:59.833" endtime="20211022 11:08:00.105"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:59.781" endtime="20211022 11:08:00.106"/>
+</kw>
+<msg timestamp="20211022 11:08:00.106" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:07:59.780" endtime="20211022 11:08:00.106"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:03.113" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:00.109" endtime="20211022 11:08:03.113"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:03.113" endtime="20211022 11:08:03.155"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:03.157" level="INFO">Typing text '12/12/2000' into text field 'xpath=//input[@id='birthdate']'.</msg>
+<status status="PASS" starttime="20211022 11:08:03.156" endtime="20211022 11:08:03.613"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:03.930" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-120.png"&gt;&lt;img src="selenium-screenshot-120.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:03.613" endtime="20211022 11:08:03.930"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:00.108" endtime="20211022 11:08:03.931"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:00.107" endtime="20211022 11:08:03.931"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:59.778" endtime="20211022 11:08:03.931"/>
+</kw>
+<kw name="Verifica CheckBox Gender e seleciona" library="resource">
+<arg>${Gender_ComboBx}</arg>
+<arg>${Gender}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:03.935" endtime="20211022 11:08:03.993"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:04.309" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-121.png"&gt;&lt;img src="selenium-screenshot-121.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:03.994" endtime="20211022 11:08:04.309"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:03.934" endtime="20211022 11:08:04.310"/>
+</kw>
+<msg timestamp="20211022 11:08:04.310" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:03.933" endtime="20211022 11:08:04.310"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Check Box Gender</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Check Box Gender" library="resource">
+<arg>${opção}</arg>
+<if>
+<branch type="IF" condition="'${element}' == 'Male'">
+<kw name="Click No Item" library="resource">
+<arg>${GenderMale}</arg>
+<status status="NOT RUN" starttime="20211022 11:08:04.314" endtime="20211022 11:08:04.314"/>
+</kw>
+<status status="NOT RUN" starttime="20211022 11:08:04.314" endtime="20211022 11:08:04.314"/>
+</branch>
+<branch type="ELSE">
+<kw name="Click No Item" library="resource">
+<arg>${GenderFemale}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:07.330" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:04.316" endtime="20211022 11:08:07.330"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${item}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:07.330" endtime="20211022 11:08:07.373"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:07.374" level="INFO">Clicking element 'xpath=//form[@id="insurance-form"]/div/section[2]/div[4]/p/label[2]/span'.</msg>
+<status status="PASS" starttime="20211022 11:08:07.373" endtime="20211022 11:08:07.495"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:07.762" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-122.png"&gt;&lt;img src="selenium-screenshot-122.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:07.495" endtime="20211022 11:08:07.762"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:04.315" endtime="20211022 11:08:07.763"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:04.314" endtime="20211022 11:08:07.763"/>
+</branch>
+<status status="PASS" starttime="20211022 11:08:04.313" endtime="20211022 11:08:07.763"/>
+</if>
+<status status="PASS" starttime="20211022 11:08:04.312" endtime="20211022 11:08:07.764"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:04.311" endtime="20211022 11:08:07.764"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:03.931" endtime="20211022 11:08:07.764"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${StreetAddress_Input}</arg>
+<arg>${Street_Address}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:07.770" endtime="20211022 11:08:07.819"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:08.068" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-123.png"&gt;&lt;img src="selenium-screenshot-123.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:07.819" endtime="20211022 11:08:08.068"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:07.768" endtime="20211022 11:08:08.068"/>
+</kw>
+<msg timestamp="20211022 11:08:08.069" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:07.767" endtime="20211022 11:08:08.069"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:11.081" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:08.073" endtime="20211022 11:08:11.081"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:11.082" endtime="20211022 11:08:11.120"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:11.121" level="INFO">Typing text 'R. Mariano filho 280' into text field 'xpath=//input[@id='streetaddress']'.</msg>
+<status status="PASS" starttime="20211022 11:08:11.120" endtime="20211022 11:08:11.524"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:11.814" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-124.png"&gt;&lt;img src="selenium-screenshot-124.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:11.525" endtime="20211022 11:08:11.814"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:08.071" endtime="20211022 11:08:11.815"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:08.069" endtime="20211022 11:08:11.815"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:07.765" endtime="20211022 11:08:11.816"/>
+</kw>
+<kw name="Verifica Se ComboBox Esta Na Tela" library="resource">
+<arg>${Country_ComboBx}</arg>
+<arg>${Country}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:11.820" endtime="20211022 11:08:11.867"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:12.131" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-125.png"&gt;&lt;img src="selenium-screenshot-125.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:11.867" endtime="20211022 11:08:12.132"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:11.819" endtime="20211022 11:08:12.132"/>
+</kw>
+<msg timestamp="20211022 11:08:12.133" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:11.818" endtime="20211022 11:08:12.133"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Combo Box</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Combo Box" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:13.145" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211022 11:08:12.136" endtime="20211022 11:08:13.145"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:13.145" endtime="20211022 11:08:13.176"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:13.177" level="INFO">Clicking element 'xpath=//select[@id='country']'.</msg>
+<status status="PASS" starttime="20211022 11:08:13.176" endtime="20211022 11:08:13.387"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Item}</var>
+<arg>${combobox}//option[@value='${itemcombobox}']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211022 11:08:13.389" level="INFO">${Item} = xpath=//select[@id='country']//option[@value='Brazil']</msg>
+<status status="PASS" starttime="20211022 11:08:13.388" endtime="20211022 11:08:13.390"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:13.390" endtime="20211022 11:08:13.457"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:13.458" level="INFO">Clicking element 'xpath=//select[@id='country']//option[@value='Brazil']'.</msg>
+<status status="PASS" starttime="20211022 11:08:13.457" endtime="20211022 11:08:13.596"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:12.134" endtime="20211022 11:08:13.596"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:12.133" endtime="20211022 11:08:13.597"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:11.816" endtime="20211022 11:08:13.597"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${ZipCode_Input}</arg>
+<arg>${Zip_Code}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:13.603" endtime="20211022 11:08:13.651"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:13.931" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-126.png"&gt;&lt;img src="selenium-screenshot-126.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:13.651" endtime="20211022 11:08:13.932"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:13.601" endtime="20211022 11:08:13.932"/>
+</kw>
+<msg timestamp="20211022 11:08:13.933" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:13.600" endtime="20211022 11:08:13.933"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:16.940" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:13.937" endtime="20211022 11:08:16.940"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:16.941" endtime="20211022 11:08:16.988"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:16.989" level="INFO">Typing text '9999' into text field 'xpath=//input[@id='zipcode']'.</msg>
+<status status="PASS" starttime="20211022 11:08:16.988" endtime="20211022 11:08:17.276"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:17.576" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-127.png"&gt;&lt;img src="selenium-screenshot-127.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:17.277" endtime="20211022 11:08:17.576"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:13.935" endtime="20211022 11:08:17.576"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:13.933" endtime="20211022 11:08:17.577"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:13.598" endtime="20211022 11:08:17.577"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${City_Input}</arg>
+<arg>${City}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:17.581" endtime="20211022 11:08:17.634"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:17.876" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-128.png"&gt;&lt;img src="selenium-screenshot-128.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:17.635" endtime="20211022 11:08:17.876"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:17.580" endtime="20211022 11:08:17.877"/>
+</kw>
+<msg timestamp="20211022 11:08:17.877" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:17.579" endtime="20211022 11:08:17.877"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:20.885" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:17.880" endtime="20211022 11:08:20.885"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:20.886" endtime="20211022 11:08:20.920"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:20.921" level="INFO">Typing text 'São Paulo' into text field 'xpath=//input[@id='city']'.</msg>
+<status status="PASS" starttime="20211022 11:08:20.920" endtime="20211022 11:08:21.163"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:21.415" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-129.png"&gt;&lt;img src="selenium-screenshot-129.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:21.163" endtime="20211022 11:08:21.415"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:17.878" endtime="20211022 11:08:21.416"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:17.877" endtime="20211022 11:08:21.416"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:17.577" endtime="20211022 11:08:21.417"/>
+</kw>
+<kw name="Verifica Se ComboBox Esta Na Tela" library="resource">
+<arg>${Occupation_ComboBx}</arg>
+<arg>${Occupation}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:21.421" endtime="20211022 11:08:21.472"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:21.723" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-130.png"&gt;&lt;img src="selenium-screenshot-130.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:21.473" endtime="20211022 11:08:21.723"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:21.420" endtime="20211022 11:08:21.724"/>
+</kw>
+<msg timestamp="20211022 11:08:21.724" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:21.419" endtime="20211022 11:08:21.724"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Combo Box</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Combo Box" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:22.730" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211022 11:08:21.726" endtime="20211022 11:08:22.730"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:22.730" endtime="20211022 11:08:22.763"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:22.764" level="INFO">Clicking element 'xpath=//select[@id='occupation']'.</msg>
+<status status="PASS" starttime="20211022 11:08:22.763" endtime="20211022 11:08:22.918"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Item}</var>
+<arg>${combobox}//option[@value='${itemcombobox}']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211022 11:08:22.921" level="INFO">${Item} = xpath=//select[@id='occupation']//option[@value='Employee']</msg>
+<status status="PASS" starttime="20211022 11:08:22.919" endtime="20211022 11:08:22.921"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:22.921" endtime="20211022 11:08:22.982"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:22.983" level="INFO">Clicking element 'xpath=//select[@id='occupation']//option[@value='Employee']'.</msg>
+<status status="PASS" starttime="20211022 11:08:22.982" endtime="20211022 11:08:23.077"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:21.725" endtime="20211022 11:08:23.078"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:21.725" endtime="20211022 11:08:23.078"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:21.417" endtime="20211022 11:08:23.078"/>
+</kw>
+<kw name="Verifica CheckBox Hobbies e seleciona" library="resource">
+<arg>${Hobbies_ComboBx}</arg>
+<arg>${Hobbies}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:23.083" endtime="20211022 11:08:23.127"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:23.391" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-131.png"&gt;&lt;img src="selenium-screenshot-131.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:23.127" endtime="20211022 11:08:23.391"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:23.082" endtime="20211022 11:08:23.392"/>
+</kw>
+<msg timestamp="20211022 11:08:23.392" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:23.081" endtime="20211022 11:08:23.392"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Check Box Hobbies</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Check Box Hobbies" library="resource">
+<arg>${opção}</arg>
+<if>
+<branch type="IF" condition="'${element}' == 'Speeding'">
+<kw name="Click No Item" library="resource">
+<arg>${Hobbies_Speeding}</arg>
+<status status="NOT RUN" starttime="20211022 11:08:23.396" endtime="20211022 11:08:23.396"/>
+</kw>
+<status status="NOT RUN" starttime="20211022 11:08:23.396" endtime="20211022 11:08:23.396"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}' == 'Bungee Jumping'">
+<kw name="Click No Item" library="resource">
+<arg>${Hobbies_BungeeJumping}</arg>
+<status status="NOT RUN" starttime="20211022 11:08:23.397" endtime="20211022 11:08:23.398"/>
+</kw>
+<status status="NOT RUN" starttime="20211022 11:08:23.397" endtime="20211022 11:08:23.398"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}' == 'Cliff Diving'">
+<kw name="Click No Item" library="resource">
+<arg>${Hobbies_CliffDiving}</arg>
+<status status="NOT RUN" starttime="20211022 11:08:23.399" endtime="20211022 11:08:23.399"/>
+</kw>
+<status status="NOT RUN" starttime="20211022 11:08:23.398" endtime="20211022 11:08:23.399"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}' == 'Skydiving'">
+<kw name="Click No Item" library="resource">
+<arg>${Hobbies_Skydiving}</arg>
+<status status="NOT RUN" starttime="20211022 11:08:23.399" endtime="20211022 11:08:23.399"/>
+</kw>
+<status status="NOT RUN" starttime="20211022 11:08:23.399" endtime="20211022 11:08:23.400"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}' == 'Other'">
+<kw name="Click No Item" library="resource">
+<arg>${Hobbies_Other}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:26.406" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:23.402" endtime="20211022 11:08:26.406"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${item}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:26.406" endtime="20211022 11:08:26.454"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:26.455" level="INFO">Clicking element 'xpath=//section[@style='display: block;']//label[@class='ideal-radiocheck-label'][5]//span[@class='ideal-check']'.</msg>
+<status status="PASS" starttime="20211022 11:08:26.454" endtime="20211022 11:08:26.645"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:26.935" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-132.png"&gt;&lt;img src="selenium-screenshot-132.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:26.646" endtime="20211022 11:08:26.936"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:23.400" endtime="20211022 11:08:26.936"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:23.400" endtime="20211022 11:08:26.936"/>
+</branch>
+<status status="PASS" starttime="20211022 11:08:23.395" endtime="20211022 11:08:26.936"/>
+</if>
+<status status="PASS" starttime="20211022 11:08:23.394" endtime="20211022 11:08:26.937"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:23.393" endtime="20211022 11:08:26.937"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:23.079" endtime="20211022 11:08:26.937"/>
+</kw>
+<kw name="Verifica Se Item Esta Na Tela" library="resource">
+<arg>${Next2}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:26.940" endtime="20211022 11:08:26.992"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:27.234" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-133.png"&gt;&lt;img src="selenium-screenshot-133.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:26.992" endtime="20211022 11:08:27.234"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:26.939" endtime="20211022 11:08:27.235"/>
+</kw>
+<msg timestamp="20211022 11:08:27.235" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:26.938" endtime="20211022 11:08:27.235"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Click No Item</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click No Item" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:30.247" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:27.238" endtime="20211022 11:08:30.247"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${item}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:30.247" endtime="20211022 11:08:30.281"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:30.283" level="INFO">Clicking element 'xpath=//button[@id='nextenterproductdata']'.</msg>
+<status status="PASS" starttime="20211022 11:08:30.282" endtime="20211022 11:08:30.459"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:30.782" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-134.png"&gt;&lt;img src="selenium-screenshot-134.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:30.460" endtime="20211022 11:08:30.783"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:27.237" endtime="20211022 11:08:30.783"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:27.235" endtime="20211022 11:08:30.783"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:26.937" endtime="20211022 11:08:30.784"/>
+</kw>
+<kw name="Olha se Existe" library="resource">
+<arg>${StartDate_Input}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:30.786" endtime="20211022 11:08:30.839"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:31.072" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-135.png"&gt;&lt;img src="selenium-screenshot-135.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:30.839" endtime="20211022 11:08:31.072"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:30.785" endtime="20211022 11:08:31.073"/>
+</kw>
+<status status="PASS" starttime="20211022 11:07:51.605" endtime="20211022 11:08:31.073"/>
+</kw>
+<kw name="E preencho as informações da Terceira tela com &quot;${StartDate}&quot;, &quot;${Insurance_Sum}&quot;, &quot;${Merit_Rating}&quot;, &quot;${Damage_Insurance}&quot;, &quot;${Optional_Products}&quot;, &quot;${Courtesy_Car}&quot;" library="steps" sourcename="E preencho as informações da Terceira tela com &quot;${StartDate}&quot;, &quot;${Insurance_Sum}&quot;, &quot;${Merit_Rating}&quot;, &quot;${Damage_Insurance}&quot;, &quot;${Optional_Products}&quot;, &quot;${Courtesy_Car}&quot;">
+<kw name="Olha se Existe" library="resource">
+<arg>${Product}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:31.080" endtime="20211022 11:08:31.132"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:31.379" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-136.png"&gt;&lt;img src="selenium-screenshot-136.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:31.133" endtime="20211022 11:08:31.379"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:31.078" endtime="20211022 11:08:31.380"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${StartDate_Input}</arg>
+<arg>${Start_Date}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:31.384" endtime="20211022 11:08:31.418"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:31.657" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-137.png"&gt;&lt;img src="selenium-screenshot-137.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:31.418" endtime="20211022 11:08:31.657"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:31.383" endtime="20211022 11:08:31.658"/>
+</kw>
+<msg timestamp="20211022 11:08:31.658" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:31.382" endtime="20211022 11:08:31.658"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:34.675" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:31.661" endtime="20211022 11:08:34.675"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:34.676" endtime="20211022 11:08:34.733"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:34.734" level="INFO">Typing text '12/12/2022' into text field 'xpath=//input[@id='startdate']'.</msg>
+<status status="PASS" starttime="20211022 11:08:34.733" endtime="20211022 11:08:35.157"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:35.442" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-138.png"&gt;&lt;img src="selenium-screenshot-138.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:35.158" endtime="20211022 11:08:35.443"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:31.660" endtime="20211022 11:08:35.443"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:31.659" endtime="20211022 11:08:35.444"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:31.380" endtime="20211022 11:08:35.444"/>
+</kw>
+<kw name="Verifica Se ComboBox Esta Na Tela" library="resource">
+<arg>${InsuranceSum_ComboBx}</arg>
+<arg>${Insurance_Sum}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:35.447" endtime="20211022 11:08:35.498"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:35.743" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-139.png"&gt;&lt;img src="selenium-screenshot-139.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:35.498" endtime="20211022 11:08:35.743"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:35.446" endtime="20211022 11:08:35.744"/>
+</kw>
+<msg timestamp="20211022 11:08:35.744" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:35.445" endtime="20211022 11:08:35.745"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Combo Box</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Combo Box" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:36.762" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211022 11:08:35.748" endtime="20211022 11:08:36.762"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:36.762" endtime="20211022 11:08:36.789"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:36.790" level="INFO">Clicking element 'xpath=//select[@id='insurancesum']'.</msg>
+<status status="PASS" starttime="20211022 11:08:36.789" endtime="20211022 11:08:36.942"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Item}</var>
+<arg>${combobox}//option[@value='${itemcombobox}']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211022 11:08:36.944" level="INFO">${Item} = xpath=//select[@id='insurancesum']//option[@value='3000000']</msg>
+<status status="PASS" starttime="20211022 11:08:36.942" endtime="20211022 11:08:36.945"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:36.945" endtime="20211022 11:08:37.005"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:37.006" level="INFO">Clicking element 'xpath=//select[@id='insurancesum']//option[@value='3000000']'.</msg>
+<status status="PASS" starttime="20211022 11:08:37.005" endtime="20211022 11:08:37.097"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:35.746" endtime="20211022 11:08:37.097"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:35.745" endtime="20211022 11:08:37.098"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:35.444" endtime="20211022 11:08:37.098"/>
+</kw>
+<kw name="Verifica Se ComboBox Esta Na Tela" library="resource">
+<arg>${MeritRating_ComboBx}</arg>
+<arg>${Merit_Rating}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:37.102" endtime="20211022 11:08:37.158"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:37.451" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-140.png"&gt;&lt;img src="selenium-screenshot-140.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:37.158" endtime="20211022 11:08:37.451"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:37.101" endtime="20211022 11:08:37.451"/>
+</kw>
+<msg timestamp="20211022 11:08:37.452" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:37.100" endtime="20211022 11:08:37.452"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Combo Box</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Combo Box" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:38.458" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211022 11:08:37.455" endtime="20211022 11:08:38.458"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:38.459" endtime="20211022 11:08:38.503"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:38.505" level="INFO">Clicking element 'xpath=//select[@id='meritrating']'.</msg>
+<status status="PASS" starttime="20211022 11:08:38.504" endtime="20211022 11:08:38.665"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Item}</var>
+<arg>${combobox}//option[@value='${itemcombobox}']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211022 11:08:38.667" level="INFO">${Item} = xpath=//select[@id='meritrating']//option[@value='Bonus 1']</msg>
+<status status="PASS" starttime="20211022 11:08:38.665" endtime="20211022 11:08:38.667"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:38.667" endtime="20211022 11:08:38.721"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:38.723" level="INFO">Clicking element 'xpath=//select[@id='meritrating']//option[@value='Bonus 1']'.</msg>
+<status status="PASS" starttime="20211022 11:08:38.722" endtime="20211022 11:08:38.808"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:37.453" endtime="20211022 11:08:38.809"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:37.452" endtime="20211022 11:08:38.809"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:37.098" endtime="20211022 11:08:38.809"/>
+</kw>
+<kw name="Verifica Se ComboBox Esta Na Tela" library="resource">
+<arg>${DamageInsurance_ComboBx}</arg>
+<arg>${Damage_Insurance}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:38.814" endtime="20211022 11:08:38.855"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:39.121" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-141.png"&gt;&lt;img src="selenium-screenshot-141.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:38.856" endtime="20211022 11:08:39.121"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:38.813" endtime="20211022 11:08:39.122"/>
+</kw>
+<msg timestamp="20211022 11:08:39.122" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:38.812" endtime="20211022 11:08:39.122"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Combo Box</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Combo Box" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:40.130" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211022 11:08:39.126" endtime="20211022 11:08:40.130"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:40.130" endtime="20211022 11:08:40.169"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:40.171" level="INFO">Clicking element 'xpath=//select[@id='damageinsurance']'.</msg>
+<status status="PASS" starttime="20211022 11:08:40.170" endtime="20211022 11:08:40.332"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Item}</var>
+<arg>${combobox}//option[@value='${itemcombobox}']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211022 11:08:40.334" level="INFO">${Item} = xpath=//select[@id='damageinsurance']//option[@value='Full Coverage']</msg>
+<status status="PASS" starttime="20211022 11:08:40.333" endtime="20211022 11:08:40.334"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:40.335" endtime="20211022 11:08:40.394"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:40.396" level="INFO">Clicking element 'xpath=//select[@id='damageinsurance']//option[@value='Full Coverage']'.</msg>
+<status status="PASS" starttime="20211022 11:08:40.395" endtime="20211022 11:08:40.487"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:39.124" endtime="20211022 11:08:40.487"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:39.123" endtime="20211022 11:08:40.487"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:38.810" endtime="20211022 11:08:40.488"/>
+</kw>
+<kw name="Verifica CheckBox Optional Products e seleciona" library="resource">
+<arg>${OptionalProducts_ComboBx}</arg>
+<arg>${Optional_Products}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:40.493" endtime="20211022 11:08:40.542"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:40.848" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-142.png"&gt;&lt;img src="selenium-screenshot-142.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:40.542" endtime="20211022 11:08:40.848"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:40.492" endtime="20211022 11:08:40.848"/>
+</kw>
+<msg timestamp="20211022 11:08:40.849" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:40.491" endtime="20211022 11:08:40.849"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Check Box Optional Products</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Check Box Optional Products" library="resource">
+<arg>${opção}</arg>
+<if>
+<branch type="IF" condition="'${element}' == 'Euro Protection'">
+<kw name="Click No Item" library="resource">
+<arg>${Optional_EuroProtection}</arg>
+<status status="NOT RUN" starttime="20211022 11:08:40.852" endtime="20211022 11:08:40.852"/>
+</kw>
+<status status="NOT RUN" starttime="20211022 11:08:40.852" endtime="20211022 11:08:40.852"/>
+</branch>
+<branch type="ELSE">
+<kw name="Click No Item" library="resource">
+<arg>${Optional_LegalDefenseInsurance}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:43.863" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:40.854" endtime="20211022 11:08:43.863"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${item}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:43.863" endtime="20211022 11:08:43.904"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:43.905" level="INFO">Clicking element 'xpath=//section[@style='display: block;']//label[@class='ideal-radiocheck-label'][2]//span[@class='ideal-check']'.</msg>
+<status status="PASS" starttime="20211022 11:08:43.904" endtime="20211022 11:08:44.041"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:44.315" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-143.png"&gt;&lt;img src="selenium-screenshot-143.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:44.042" endtime="20211022 11:08:44.315"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:40.853" endtime="20211022 11:08:44.316"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:40.852" endtime="20211022 11:08:44.316"/>
+</branch>
+<status status="PASS" starttime="20211022 11:08:40.851" endtime="20211022 11:08:44.316"/>
+</if>
+<status status="PASS" starttime="20211022 11:08:40.850" endtime="20211022 11:08:44.316"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:40.849" endtime="20211022 11:08:44.317"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:40.488" endtime="20211022 11:08:44.317"/>
+</kw>
+<kw name="Verifica Se ComboBox Esta Na Tela" library="resource">
+<arg>${CourtesyCar_ComboBx}</arg>
+<arg>${Courtesy_Car}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:44.321" endtime="20211022 11:08:44.371"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:44.629" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-144.png"&gt;&lt;img src="selenium-screenshot-144.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:44.372" endtime="20211022 11:08:44.629"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:44.320" endtime="20211022 11:08:44.629"/>
+</kw>
+<msg timestamp="20211022 11:08:44.630" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:44.319" endtime="20211022 11:08:44.630"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Combo Box</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Combo Box" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:45.649" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20211022 11:08:44.634" endtime="20211022 11:08:45.649"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:45.649" endtime="20211022 11:08:45.686"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${combobox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:45.687" level="INFO">Clicking element 'xpath=//select[@id='courtesycar']'.</msg>
+<status status="PASS" starttime="20211022 11:08:45.687" endtime="20211022 11:08:45.842"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${Item}</var>
+<arg>${combobox}//option[@value='${itemcombobox}']</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20211022 11:08:45.844" level="INFO">${Item} = xpath=//select[@id='courtesycar']//option[@value='No']</msg>
+<status status="PASS" starttime="20211022 11:08:45.842" endtime="20211022 11:08:45.844"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<arg>20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:45.845" endtime="20211022 11:08:45.897"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:45.898" level="INFO">Clicking element 'xpath=//select[@id='courtesycar']//option[@value='No']'.</msg>
+<status status="PASS" starttime="20211022 11:08:45.898" endtime="20211022 11:08:45.982"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:44.632" endtime="20211022 11:08:45.983"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:44.630" endtime="20211022 11:08:45.983"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:44.318" endtime="20211022 11:08:45.983"/>
+</kw>
+<kw name="Verifica Se Item Esta Na Tela" library="resource">
+<arg>${Next3}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:45.988" endtime="20211022 11:08:46.030"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:46.301" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-145.png"&gt;&lt;img src="selenium-screenshot-145.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:46.031" endtime="20211022 11:08:46.302"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:45.986" endtime="20211022 11:08:46.302"/>
+</kw>
+<msg timestamp="20211022 11:08:46.303" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:45.985" endtime="20211022 11:08:46.303"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Click No Item</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click No Item" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:49.320" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:46.306" endtime="20211022 11:08:49.320"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${item}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:49.320" endtime="20211022 11:08:49.346"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:49.347" level="INFO">Clicking element 'xpath=//button[@id='nextselectpriceoption']'.</msg>
+<status status="PASS" starttime="20211022 11:08:49.347" endtime="20211022 11:08:49.534"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:49.878" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-146.png"&gt;&lt;img src="selenium-screenshot-146.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:49.535" endtime="20211022 11:08:49.879"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:46.304" endtime="20211022 11:08:49.879"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:46.303" endtime="20211022 11:08:49.879"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:45.984" endtime="20211022 11:08:49.880"/>
+</kw>
+<kw name="Olha se Existe" library="resource">
+<arg>${SelectOption}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:49.881" endtime="20211022 11:08:49.972"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:50.224" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-147.png"&gt;&lt;img src="selenium-screenshot-147.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:49.972" endtime="20211022 11:08:50.224"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:49.880" endtime="20211022 11:08:50.225"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:31.076" endtime="20211022 11:08:50.225"/>
+</kw>
+<kw name="E Selecionar na Quarta tela a opção do plano &quot;${Option}&quot;" library="steps" sourcename="E Selecionar na Quarta tela a opção do plano &quot;${Option}&quot;">
+<kw name="Olha se Existe" library="resource">
+<arg>${TelaPrice}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:50.234" endtime="20211022 11:08:50.281"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:50.545" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-148.png"&gt;&lt;img src="selenium-screenshot-148.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:50.282" endtime="20211022 11:08:50.546"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:50.232" endtime="20211022 11:08:50.546"/>
+</kw>
+<kw name="Verifica CheckBox Select Price Option e seleciona" library="resource">
+<arg>${SelectOption}</arg>
+<arg>${Option}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:50.550" endtime="20211022 11:08:50.581"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:50.843" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-149.png"&gt;&lt;img src="selenium-screenshot-149.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:50.582" endtime="20211022 11:08:50.843"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:50.549" endtime="20211022 11:08:50.844"/>
+</kw>
+<msg timestamp="20211022 11:08:50.844" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:50.548" endtime="20211022 11:08:50.844"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Seleciona Item Check Box Select Price Option</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Seleciona Item Check Box Select Price Option" library="resource">
+<arg>${opção}</arg>
+<if>
+<branch type="IF" condition="'${element}' == 'Silver'">
+<kw name="Click No Item" library="resource">
+<arg>${Option_Silver}</arg>
+<status status="NOT RUN" starttime="20211022 11:08:50.848" endtime="20211022 11:08:50.848"/>
+</kw>
+<status status="NOT RUN" starttime="20211022 11:08:50.847" endtime="20211022 11:08:50.848"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}' == 'Gold'">
+<kw name="Click No Item" library="resource">
+<arg>${Option_Gold}</arg>
+<status status="NOT RUN" starttime="20211022 11:08:50.850" endtime="20211022 11:08:50.850"/>
+</kw>
+<status status="NOT RUN" starttime="20211022 11:08:50.849" endtime="20211022 11:08:50.850"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}' == 'Platinum'">
+<kw name="Click No Item" library="resource">
+<arg>${Option_Platinum}</arg>
+<status status="NOT RUN" starttime="20211022 11:08:50.851" endtime="20211022 11:08:50.852"/>
+</kw>
+<status status="NOT RUN" starttime="20211022 11:08:50.851" endtime="20211022 11:08:50.852"/>
+</branch>
+<branch type="ELSE IF" condition="'${element}' == 'Ultimate'">
+<kw name="Click No Item" library="resource">
+<arg>${Option_Ultimate}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:53.860" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:50.854" endtime="20211022 11:08:53.860"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${item}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:53.860" endtime="20211022 11:08:53.898"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:53.899" level="INFO">Clicking element 'xpath=//th[@colspan='4']//label[@class='choosePrice ideal-radiocheck-label'][4]'.</msg>
+<status status="PASS" starttime="20211022 11:08:53.898" endtime="20211022 11:08:54.040"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:54.491" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-150.png"&gt;&lt;img src="selenium-screenshot-150.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:54.041" endtime="20211022 11:08:54.491"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:50.853" endtime="20211022 11:08:54.492"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:50.852" endtime="20211022 11:08:54.492"/>
+</branch>
+<status status="PASS" starttime="20211022 11:08:50.847" endtime="20211022 11:08:54.492"/>
+</if>
+<status status="PASS" starttime="20211022 11:08:50.846" endtime="20211022 11:08:54.492"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:50.844" endtime="20211022 11:08:54.493"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:50.546" endtime="20211022 11:08:54.493"/>
+</kw>
+<kw name="Verifica Se Item Esta Na Tela" library="resource">
+<arg>${Next4}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:54.500" endtime="20211022 11:08:54.648"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:54.923" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-151.png"&gt;&lt;img src="selenium-screenshot-151.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:54.649" endtime="20211022 11:08:54.924"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:54.498" endtime="20211022 11:08:54.924"/>
+</kw>
+<msg timestamp="20211022 11:08:54.925" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:54.496" endtime="20211022 11:08:54.925"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Click No Item</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click No Item" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:08:57.936" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:54.928" endtime="20211022 11:08:57.936"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${item}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:57.937" endtime="20211022 11:08:57.972"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:08:57.974" level="INFO">Clicking element 'xpath=//button[@id='nextsendquote']'.</msg>
+<status status="PASS" starttime="20211022 11:08:57.973" endtime="20211022 11:08:58.129"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:58.407" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-152.png"&gt;&lt;img src="selenium-screenshot-152.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:58.130" endtime="20211022 11:08:58.408"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:54.927" endtime="20211022 11:08:58.408"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:54.926" endtime="20211022 11:08:58.409"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:54.494" endtime="20211022 11:08:58.409"/>
+</kw>
+<kw name="Olha se Existe" library="resource">
+<arg>${E-Mail_Input}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:58.412" endtime="20211022 11:08:58.460"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:58.692" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-153.png"&gt;&lt;img src="selenium-screenshot-153.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:58.460" endtime="20211022 11:08:58.692"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:58.409" endtime="20211022 11:08:58.693"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:50.231" endtime="20211022 11:08:58.693"/>
+</kw>
+<kw name="E preencho as informações da Quinta tela com &quot;${Email}&quot;, &quot;${Cell}&quot;, &quot;${Name}&quot;, &quot;${Password}&quot;" library="steps" sourcename="E preencho as informações da Quinta tela com &quot;${Email}&quot;, &quot;${Cell}&quot;, &quot;${Name}&quot;, &quot;${Password}&quot;">
+<kw name="Olha se Existe" library="resource">
+<arg>${Send_Quote}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:58.697" endtime="20211022 11:08:58.754"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:58.968" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-154.png"&gt;&lt;img src="selenium-screenshot-154.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:58.755" endtime="20211022 11:08:58.969"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:58.696" endtime="20211022 11:08:58.970"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${E-Mail_Input}</arg>
+<arg>${Email}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:08:58.975" endtime="20211022 11:08:59.007"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:08:59.238" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-155.png"&gt;&lt;img src="selenium-screenshot-155.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:08:59.007" endtime="20211022 11:08:59.239"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:58.973" endtime="20211022 11:08:59.239"/>
+</kw>
+<msg timestamp="20211022 11:08:59.239" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:08:58.972" endtime="20211022 11:08:59.240"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:09:02.252" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:08:59.242" endtime="20211022 11:09:02.253"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:02.253" endtime="20211022 11:09:02.298"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:09:02.299" level="INFO">Typing text 'luis.1912carlos@gmail.com' into text field 'xpath=//input[@id='email']'.</msg>
+<status status="PASS" starttime="20211022 11:09:02.299" endtime="20211022 11:09:03.011"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:03.313" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-156.png"&gt;&lt;img src="selenium-screenshot-156.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:03.012" endtime="20211022 11:09:03.314"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:59.241" endtime="20211022 11:09:03.314"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:59.240" endtime="20211022 11:09:03.315"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:58.970" endtime="20211022 11:09:03.315"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${Phone_Input}</arg>
+<arg>${Cell}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:03.319" endtime="20211022 11:09:03.371"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:03.662" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-157.png"&gt;&lt;img src="selenium-screenshot-157.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:03.372" endtime="20211022 11:09:03.663"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:03.318" endtime="20211022 11:09:03.663"/>
+</kw>
+<msg timestamp="20211022 11:09:03.663" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:09:03.317" endtime="20211022 11:09:03.664"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:09:06.672" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:09:03.668" endtime="20211022 11:09:06.672"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:06.673" endtime="20211022 11:09:06.709"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:09:06.711" level="INFO">Typing text '985057804' into text field 'xpath=//input[@id='phone']'.</msg>
+<status status="PASS" starttime="20211022 11:09:06.709" endtime="20211022 11:09:07.088"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:07.384" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-158.png"&gt;&lt;img src="selenium-screenshot-158.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:07.089" endtime="20211022 11:09:07.384"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:03.666" endtime="20211022 11:09:07.385"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:03.664" endtime="20211022 11:09:07.385"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:03.315" endtime="20211022 11:09:07.385"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${Username_Input}</arg>
+<arg>${Name}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:07.390" endtime="20211022 11:09:07.447"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:07.734" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-159.png"&gt;&lt;img src="selenium-screenshot-159.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:07.447" endtime="20211022 11:09:07.734"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:07.388" endtime="20211022 11:09:07.735"/>
+</kw>
+<msg timestamp="20211022 11:09:07.735" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:09:07.387" endtime="20211022 11:09:07.735"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:09:10.747" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:09:07.739" endtime="20211022 11:09:10.747"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:10.748" endtime="20211022 11:09:10.792"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:09:10.793" level="INFO">Typing text 'Luis' into text field 'xpath=//section//div//input[@id='username']'.</msg>
+<status status="PASS" starttime="20211022 11:09:10.792" endtime="20211022 11:09:11.101"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:11.422" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-160.png"&gt;&lt;img src="selenium-screenshot-160.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:11.102" endtime="20211022 11:09:11.423"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:07.737" endtime="20211022 11:09:11.423"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:07.736" endtime="20211022 11:09:11.423"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:07.386" endtime="20211022 11:09:11.424"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${Password_Input}</arg>
+<arg>${Password}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:11.428" endtime="20211022 11:09:11.519"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:11.824" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-161.png"&gt;&lt;img src="selenium-screenshot-161.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:11.519" endtime="20211022 11:09:11.824"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:11.427" endtime="20211022 11:09:11.825"/>
+</kw>
+<msg timestamp="20211022 11:09:11.825" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:09:11.426" endtime="20211022 11:09:11.825"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:09:14.831" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:09:11.829" endtime="20211022 11:09:14.831"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:14.831" endtime="20211022 11:09:14.863"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:09:14.864" level="INFO">Typing text '0Cluis' into text field 'xpath=//input[@id='password']'.</msg>
+<status status="PASS" starttime="20211022 11:09:14.863" endtime="20211022 11:09:15.236"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:15.542" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-162.png"&gt;&lt;img src="selenium-screenshot-162.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:15.237" endtime="20211022 11:09:15.542"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:11.827" endtime="20211022 11:09:15.543"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:11.826" endtime="20211022 11:09:15.543"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:11.424" endtime="20211022 11:09:15.544"/>
+</kw>
+<kw name="Verifica Se Input Esta Na Tela" library="resource">
+<arg>${ConfirmPassword_Input}</arg>
+<arg>${Password}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:15.548" endtime="20211022 11:09:15.606"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:15.880" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-163.png"&gt;&lt;img src="selenium-screenshot-163.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:15.607" endtime="20211022 11:09:15.880"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:15.547" endtime="20211022 11:09:15.880"/>
+</kw>
+<msg timestamp="20211022 11:09:15.881" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:09:15.546" endtime="20211022 11:09:15.881"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Preenche Text</arg>
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Preenche Text" library="resource">
+<arg>${pageObject}</arg>
+<arg>${opção}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:09:18.895" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:09:15.884" endtime="20211022 11:09:18.895"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:18.896" endtime="20211022 11:09:18.931"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input}</arg>
+<arg>${Text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211022 11:09:18.932" level="INFO">Typing text '0Cluis' into text field 'xpath=//input[@id='confirmpassword']'.</msg>
+<status status="PASS" starttime="20211022 11:09:18.931" endtime="20211022 11:09:19.296"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:19.614" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-164.png"&gt;&lt;img src="selenium-screenshot-164.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:19.297" endtime="20211022 11:09:19.614"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:15.882" endtime="20211022 11:09:19.615"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:15.881" endtime="20211022 11:09:19.615"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:15.544" endtime="20211022 11:09:19.615"/>
+</kw>
+<status status="PASS" starttime="20211022 11:08:58.694" endtime="20211022 11:09:19.616"/>
+</kw>
+<kw name="Então Valido a tela com mensagem &quot;${Texto}&quot; confirmando que passou com sucesso" library="steps" sourcename="Então Valido a tela com mensagem &quot;${Texto}&quot; confirmando que passou com sucesso">
+<kw name="Verifica Se Item Esta Na Tela" library="resource">
+<arg>${Next5}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:19.624" endtime="20211022 11:09:19.688"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:19.963" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-165.png"&gt;&lt;img src="selenium-screenshot-165.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:19.688" endtime="20211022 11:09:19.964"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:19.622" endtime="20211022 11:09:19.964"/>
+</kw>
+<msg timestamp="20211022 11:09:19.965" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:09:19.622" endtime="20211022 11:09:19.965"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Click No Item</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click No Item" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:09:22.969" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:09:19.969" endtime="20211022 11:09:22.969"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${item}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:22.969" endtime="20211022 11:09:23.006"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:09:23.008" level="INFO">Clicking element 'xpath=//button[@id='sendemail']'.</msg>
+<status status="PASS" starttime="20211022 11:09:23.007" endtime="20211022 11:09:23.182"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:23.557" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-166.png"&gt;&lt;img src="selenium-screenshot-166.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:23.182" endtime="20211022 11:09:23.557"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:19.967" endtime="20211022 11:09:23.558"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:19.966" endtime="20211022 11:09:23.558"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:19.620" endtime="20211022 11:09:23.559"/>
+</kw>
+<kw name="Verifica se existe o texto na Tela" library="resource">
+<arg>${element}</arg>
+<arg>${Texto}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:09:28.570" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211022 11:09:23.561" endtime="20211022 11:09:28.570"/>
+</kw>
+<kw name="Wait Until Element Contains" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>${Texto}</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" starttime="20211022 11:09:28.572" endtime="20211022 11:09:32.618"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:32.920" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-167.png"&gt;&lt;img src="selenium-screenshot-167.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:32.618" endtime="20211022 11:09:32.920"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:23.559" endtime="20211022 11:09:32.921"/>
+</kw>
+<kw name="Verifica Se Item Esta Na Tela" library="resource">
+<arg>${Okay}</arg>
+<kw name="Run Keyword And Return Status" library="BuiltIn">
+<var>${Status}</var>
+<arg>Olha se Existe</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<kw name="Olha se Existe" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${element}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:32.925" endtime="20211022 11:09:32.973"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:33.234" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-168.png"&gt;&lt;img src="selenium-screenshot-168.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:32.973" endtime="20211022 11:09:33.235"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:32.924" endtime="20211022 11:09:33.235"/>
+</kw>
+<msg timestamp="20211022 11:09:33.236" level="INFO">${Status} = True</msg>
+<status status="PASS" starttime="20211022 11:09:32.923" endtime="20211022 11:09:33.236"/>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>'${Status}' == 'True'</arg>
+<arg>Click No Item</arg>
+<arg>${pageObject}</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Click No Item" library="resource">
+<arg>${pageObject}</arg>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211022 11:09:36.244" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211022 11:09:33.238" endtime="20211022 11:09:36.244"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${item}</arg>
+<arg>120</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20211022 11:09:36.245" endtime="20211022 11:09:36.273"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${item}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211022 11:09:36.274" level="INFO">Clicking element 'xpath=//button[@class='confirm']'.</msg>
+<status status="PASS" starttime="20211022 11:09:36.273" endtime="20211022 11:09:36.398"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:36.737" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-169.png"&gt;&lt;img src="selenium-screenshot-169.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:36.398" endtime="20211022 11:09:36.738"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:33.237" endtime="20211022 11:09:36.738"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:33.236" endtime="20211022 11:09:36.739"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:32.921" endtime="20211022 11:09:36.739"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:19.618" endtime="20211022 11:09:36.740"/>
+</kw>
+<kw name="Finalizar sessão" library="resource" type="TEARDOWN">
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211022 11:09:36.999" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-170.png"&gt;&lt;img src="selenium-screenshot-170.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:36.743" endtime="20211022 11:09:37.000"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211022 11:09:37.000" endtime="20211022 11:09:40.516"/>
+</kw>
+<status status="PASS" starttime="20211022 11:09:36.741" endtime="20211022 11:09:40.516"/>
+</kw>
+<kw name="Stop Recording Test" library="AutoRecorder">
+<arg>CT01- Preencher os formulários das paginas e clicando no Botão Next</arg>
+<doc>There is no need to execute this keyword manually.
+Basically - alias for https://mihaiparvu.github.io/ScreenCapLibrary/ScreenCapLibrary.html#Stop%20Video%20Recording</doc>
+<msg timestamp="20211022 11:09:40.623" level="INFO" html="true">&lt;a href="recording_2.webm"&gt;&lt;video width="800px" autoplay&gt;&lt;source src="recording_2.webm" type="video/webm"&gt;&lt;/video&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211022 11:09:40.519" endtime="20211022 11:09:40.623"/>
+</kw>
+<status status="PASS" starttime="20211022 11:06:46.112" endtime="20211022 11:09:40.517"/>
+</test>
+<status status="PASS" starttime="20211022 11:06:42.706" endtime="20211022 11:09:40.627"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tricentis">Tricentis</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
